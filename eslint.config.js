@@ -41,7 +41,8 @@ export default defineConfig([
           ignoreRegExpLiterals: true,
           ignoreComments: false,
           ignoreTrailingComments: true,
-          ignorePattern: '^\\s*//\\s',
+          // Ignore comment lines and import/export module paths (long under @/ aliases).
+          ignorePattern: '^\\s*//\\s|\\bfrom\\s+[\'"]',
         },
       ],
 

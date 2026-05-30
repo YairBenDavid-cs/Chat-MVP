@@ -11,13 +11,12 @@ Identify and implement the next incomplete step in this project's build plan.
    - `projectConstrains.md` — acceptance criteria
 
 2. **Detect what's already done** by scanning the `## Progress Tracker` section in `TODO.md`
-   for the first unchecked phase (`- [ ]`), then within that phase locate the first step
-   that doesn't yet have its output file(s) present on disk.
+   for the first unchecked phase (`- [ ]`), plan how to implment it and do so.
 
 3. **Announce clearly** before writing any code:
-   - Which phase and step number you are implementing
+   - Which phase number you are implementing
    - Which file(s) will be created or modified
-   - A one-sentence explanation of why this step comes next
+   - A one-sentence explanation of why this phase step comes next
 
 4. **Implement the step exactly** as described in `TODO.md`, following every rule in `CLAUDE.md`:
    - No nested JSX — every `return` uses only `<ComponentName />` references
