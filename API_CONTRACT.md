@@ -5,7 +5,7 @@ This document is the source of truth for the chat API. Week 2 implements it as a
 change to a shape here must be reflected in both the mock and this document.
 
 The Week 2 mock lives in `src/mocks/` (handlers in `src/mocks/handlers/`). The client
-calls every endpoint through a single typed module, `src/messenger/chat/api/apiClient.ts`
+calls every endpoint through a single typed module, `src/shared/api/apiClient.ts`
 (`apiFetch<T>`).
 
 ## Conventions

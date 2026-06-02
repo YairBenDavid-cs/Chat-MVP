@@ -1,6 +1,6 @@
-import { apiFetch } from '@/messenger/chat/api/apiClient';
+import { apiFetch } from '@/shared/api/apiClient';
 import type { LoginRequest, LoginResponse } from '@/login/types/authTypes';
-import { clearAuthSession, setAuthSession } from '@/login/api/authToken';
+import { clearAuthSession, setAuthSession } from '@/shared/auth/authSession';
 
 export async function login(request: LoginRequest): Promise<LoginResponse> {
   const response = await apiFetch<LoginResponse>('/auth/login', {

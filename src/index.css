@@ -364,7 +364,7 @@ code {
   color: var(--chat-muted);
 }
 
-.conversation-list-no-results-message {
+.status-panel-message {
   margin: 0;
   font-size: 0.875rem;
 }

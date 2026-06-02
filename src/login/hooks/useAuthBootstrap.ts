@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 import { useChatContext } from '@/messenger/chat/state/chatContext';
 import { restoreAuth } from '@/messenger/chat/state/chatActions';
-import { getAuthToken, getAuthUser } from '@/login/api/authToken';
+import { getAuthToken, getAuthUser } from '@/shared/auth/authSession';
 
 export function useAuthBootstrap(): void {
   const { state, dispatch } = useChatContext();

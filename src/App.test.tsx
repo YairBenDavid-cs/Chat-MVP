@@ -5,7 +5,7 @@ import { beforeEach, describe, expect, it } from 'vitest';
 
 import App from '@/App';
 import { server } from '@/mocks/server';
-import { clearAuthSession } from '@/login/api/authToken';
+import { clearAuthSession } from '@/shared/auth/authSession';
 
 async function loginAs(
   user: ReturnType<typeof userEvent.setup>,

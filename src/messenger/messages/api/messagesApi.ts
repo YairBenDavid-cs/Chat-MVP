@@ -1,6 +1,6 @@
 import type { ConversationId } from '@/messenger/conversations/types/conversationTypes';
 import type { Message, MessagesPage, PaginationCursor } from '@/messenger/messages/types/messageTypes';
-import { apiFetch } from '@/messenger/chat/api/apiClient';
+import { apiFetch } from '@/shared/api/apiClient';
 
 export async function getMessages(
   conversationId: ConversationId,

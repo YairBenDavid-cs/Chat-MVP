@@ -2,13 +2,11 @@ import type { AuthToken } from '@/login/types/authTypes';
 import type { Conversation, ConversationId } from '@/messenger/conversations/types/conversationTypes';
 import type { Message } from '@/messenger/messages/types/messageTypes';
 import type { User } from '@/messenger/chat/types/userTypes';
+import type { ApiError } from '@/shared/api/apiTypes';
 
 export type Status = 'idle' | 'loading' | 'success' | 'error';
 
-export type Error = {
-  code: string;
-  message: string;
-};
+export type Error = ApiError;
 
 export type ChatState = {
   user: User | null;
