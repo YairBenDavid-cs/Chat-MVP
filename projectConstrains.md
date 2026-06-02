@@ -14,7 +14,7 @@ Ship a chat UI in React + Vite + TypeScript against a mocked API. Conversation l
 
 ## Spec
 
-- Auth screen (mocked): "log in as user X" — no real auth this week, just choose a user identity.
+- Auth screen (mocked): sign in with username and password (MSW validates credentials; same token flow for API calls).
 - Conversation list: shows all conversations the current user is part of, sorted by last message.
 - Message thread: messages from the selected conversation, auto-scrolled to bottom.
 - Message composer: controlled text area, submit on Enter (Shift+Enter for newline).
